@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+}
+.one div{
+    margin-bottom:100px;
+    width:100px;
+    height:100px;
+    background-color:red;
+    transition-property: width;
+    transition-duration:2s;
+    transition-timing-function:ease-out;
+}
+.one div:hover{
+    width:100vw;
+}
+.tow div{
+    width:100px;
+    height:100px; 
+    margin-bottom:10px;
+
+}
+.tow div:nth-child(1){
+    background-color:red;
+    transition:transform 2s ease-out 1ms;
+}
+.tow div:nth-child(2){
+    background-color:green;
+    transition:transform 2s ease-out 1s;
+}
+.tow:hover div{
+    transform:translate(90vw);
+}

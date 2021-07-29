@@ -1,0 +1,55 @@
+body{
+    text-align:center;
+    background-color:gray;
+}
+.main{
+    width:400px;
+    height:400px;
+    margin:20vh auto;
+    position:relative;
+    overflow:hidden;
+}
+.main img{
+    width:400px;
+    height:400px; 
+}
+.main div{
+    width:400px;
+    padding:185px 0;
+    position:absolute;
+    color:white;
+    font-size:30px;
+    background-color:rgba(0, 0, 0, 0.164);
+    transition:transform 1s ;
+}
+.main:hover div{
+    transform:translatey(-400px)
+}
+/* ****************************** */
+.circle{
+    margin:20vh 0;
+    display:flex;
+}
+.circle a{
+    background-color: pink;
+    font-size:24px;
+    width: 150px;
+    padding:60px 0;
+    border-radius:50%;
+    transition:transform 1s;
+}
+.circle div:nth-child(2){
+    width:80px;
+    height:80px;
+    margin-top:10vh;
+    margin-left:10vw;
+    border-radius:50%;
+    background-color: lightblue;
+    transition:transform 3s ease-in 1s;
+}
+.circle a:active{
+ transform:translate(10.5vw);
+}
+.circle a:active+div{
+    transform:translate(70vw);
+}

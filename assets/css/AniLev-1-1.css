@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+}
+section{
+    height:50vh;
+    text-align:center;
+    padding-top:50vh;
+}
+a {
+    color:black;
+    text-decoration-line: none;
+    display:block;
+    font-size:40px;
+    animation-name:dancer;
+    animation-duration:1s;
+    animation-timing-function:ease;
+    animation-delay:1ms;
+    animation-iteration-count: infinite;
+
+}
+@keyframes dancer{
+    0% 100%{
+      transform:translatey(1vh);
+    }
+    50%{
+        transform:translatey(2vh); 
+        opacity:0.5;
+        color:white;  
+    }
+    75%{
+        transform:translatey(3vh);   
+    }
+}
+
+section:first-of-type{
+    background-color: pink;
+    animation-name:scrol;
+}
+body section:nth-child(2){
+    background-color: turquoise;
+}
+body section:nth-child(3){
+    background-color: yellow;
+}

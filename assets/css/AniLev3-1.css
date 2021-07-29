@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    position:relative;
+    text-align:center;
+    background-color: black;
+    animation-name:change;
+    animation-duration:2s;
+    animation-timing-function: ease-in-out;
+    animation-delay:4s;
+    animation-iteration-count: infinite;
+}
+@keyframes change{
+    from{
+        background-color: black;
+    
+    }
+    to{
+       
+        background-color:white;
+    
+    }
+}
+
+section{
+    width:50vw;
+    height:40vw;
+    margin:2vh auto;
+    position:relative;
+    border-radius:50%;
+    animation-name:dance;
+    animation-duration:10s;
+    animation-timing-function: ease;
+    animation-delay:4s;
+    animation-iteration-count: infinite;
+}
+@keyframes dance{
+    0%{
+        background-color: white;
+        transform:scale(1.1);
+        transform:rotate(-180deg)
+    }
+    50%{
+        transform:scale(0.25);
+        background-color:black;
+        transform:rotate(180deg);
+        border-radius:40%;  
+    }
+    60%{
+        position:absolute;
+        left:0;
+        border-radius:30%;
+    }
+    70%{
+        transform:rotatez(360deg);
+        transform:scale(2);
+        opacity:0.5;
+        border-radius:20%;
+    }
+    80%{
+        position:absolute;
+        right:0;
+    }
+    90%{
+        transform:rotatex(180deg);
+        border-radius:10%;
+    }
+    95%{
+        transform:skew(30deg)
+    }
+}
+div{
+    width:8vw;
+    height:8vw;
+    position:absolute;
+   border-radius:50%;
+   top:2vh;
+   left:2vh;
+   animation-name:move;
+   animation-duration:4s;
+   animation-timing-function: ease-out;
+   animation-iteration-count: infinite;
+}
+.d1{
+    background-color:red;
+    animation-delay:1s;
+}
+.d2{
+    background-color:blue;
+    animation-delay:2s;
+}
+.d3{
+    background-color: green;
+    animation-delay:3s;
+}
+.d4{
+    background-color: yellow;
+    animation-delay:4s;
+}
+@keyframes move{
+    25%,100%{
+        transform:translate(40vw);
+        background-color:yellow;
+    }
+    50%{
+        transform:translate(40vw,30vw);
+        background-color: green;
+    }
+    75%{
+        transform:translatey(30vw);
+        background-color:blue;
+    }
+    100%{
+        transform:translate(0vw);
+        background-color:red;
+    }
+}

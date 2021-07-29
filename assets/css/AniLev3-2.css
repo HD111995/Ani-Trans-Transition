@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: black;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+div{
+    text-align:center;
+    font-size:20px;
+    padding-top:10px;
+    width:40px;
+    height:30px;
+    box-shadow:5px 5px 10px  white;
+    margin:0 30px;
+    animation-name:loading;
+    animation-duration:1.5s;
+    animation-iteration-count: infinite;
+}
+.d1{
+  background-color: lightgreen;
+  animation-delay:0.3s;  
+}
+.d2{
+    background-color:purple;
+    animation-delay:0.6s;    
+  }
+  .d3{
+    background-color: yellow; 
+    animation-delay:0.9s;   
+  }
+  .d4{
+    background-color:pink;
+    animation-delay:1.2s;    
+  }
+  .d5{
+    background-color: lightseagreen;
+    animation-delay:1.5s;    
+  }
+  @keyframes loading{
+      50%{
+          transform:translatey(-40px)
+      }
+      70%{
+          border-top:10px solid white;
+      }
+      90%{
+          opacity:0.8;
+      }
+  }
+  span {
+      position:absolute;
+      bottom:40vh;
+      left:35vw;
+      width:5px;
+      height:5px;
+      background-color:greenyellow;
+      animation:loadline 10s linear infinite ;
+  }
+  @keyframes loadline{
+      from{
+          width:5px;
+      }
+      to{
+          width:450px;
+      }
+  }

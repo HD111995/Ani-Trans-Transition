@@ -1,0 +1,46 @@
+body>div{
+    background-color:tomato;
+    width:200px;
+    height:200px;
+    border-radius:10px;
+    margin:30vh 40vw;
+    transition:transform 1s;
+}
+body>div:hover{
+    transform:translatey(50px) rotate(90deg) scale(1.5);
+}
+section{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+section div{
+    
+    text-align:center;
+    font-size:22px;
+    margin:5vh 5vw;
+    border-radius:10px;
+    background-color:Green;
+    width:200px;
+    padding:80px 0;
+    color:white;
+    transition:transform 1s;
+}
+section div:nth-child(1):hover{
+    transform:translate(40px ,40px)
+}
+section div:nth-child(2):hover{
+    transform:translatex(40px)
+}
+section div:nth-child(3):hover{
+    transform:translatey(40px)
+}
+section div:nth-child(4):hover{
+    transform:rotate(30deg)
+}
+section div:nth-child(5):hover{
+    transform:scaley(1.5)
+}
+section div:nth-child(6):hover{
+    transform:skew(30deg)
+}

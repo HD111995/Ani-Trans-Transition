@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+}
+div{
+    text-align:center;
+    width:20vw;
+    padding:50vh 0;
+    border-left:4px dotted greenyellow;
+    font-size:26px;
+    animation-name:st-blitz;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+}
+@keyframes st-blitz{
+    from{
+        background-color:white;
+    }
+    to{
+        background-color: black;
+        color:white;
+    }
+}
+body div:nth-child(1){
+    animation-duration:2000ms;
+}
+body div:nth-child(2){
+    animation-duration:1000ms;
+}
+body div:nth-child(3){
+    animation-duration:500ms;
+}
+body div:nth-child(4){
+    animation-duration:250ms;
+}
+body div:nth-child(5){
+    animation-duration:125ms;
+}
